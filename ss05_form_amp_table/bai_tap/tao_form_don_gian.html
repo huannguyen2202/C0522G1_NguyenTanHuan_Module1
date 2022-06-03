@@ -2,9 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>TAO FORM DO GIAN</title>
 </head>
+<style>
+    .lable{
+        color: blue;
+        margin-left: 100px;
+    }
+    h1{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+        background-color: darkorange;
+        color: white;
+        padding: 10px;
+    }
+    #khung{
+        border-bottom: 10px solid aqua;
+        border-top: 10px solid aqua;
+        border-left: 20px solid aqua;
+        border-right: 20px solid aqua;
+        width: 800px;
+        margin-left: 400px;
+    }
+
+</style>
 <body>
-$END$
+<form>
+    <div id="khung">
+    <h1>SO THICH CUA BAN</h1>
+    <span class="lable">Ho va ten:</span>
+    <input type="text" name="yourname"><br><br>
+    <span class="lable">Email:</span>
+    <input style="margin-left: 23px" type="text" name="email"><br><br>
+        <span class="lable">so thich:</span>
+    <input type="checkbox" name="hobby" value="thethao" checked>The thao
+    <input style="margin-left: 20px" type="checkbox" name="hobby" value="amnhac" checked>Am nhac
+    <input style="margin-left: 20px" type="checkbox" name="hobby" value="dosach" checked>Doc sach<br><br>
+    <input style="margin-left: 162px" type="checkbox" name="hobby" value="luotweb" checked>Luot web
+    <input style="margin-left: 15px" type="checkbox" name="hobby" value="choigame" checked>Choi game
+    <input style="margin-left: 9px" type="checkbox" name="hobby" value="dienanh" checked>Dien anh<br><br>
+    <input style="margin-left: 162px" type="checkbox" name="hobby" value="dulich" checked>Du lich<br><br>
+    <input style="margin-left: 162px" type="submit" value="Gui thong tin">
+    <input type="submit" value="Nhap lai">
+    </div>
+</form>
+</body>
+</html><br>
+<br>
+<br>
+<br>
+<!-BAI 2.2->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAO FORM DON GIAN 2</title>
+</head>
+<style>
+    .lable{
+        color: blue;
+        margin-left: 100px;
+    }
+    h1{
+        font-size: 35px;
+        width: 97%;
+        text-align: left;
+        background-color: darkorange;
+        color: white;
+        padding: 10px;
+    }
+    #khung{
+        border-bottom: 10px solid aqua;
+        border-top: 10px solid aqua;
+        border-left: 10px solid aqua;
+        border-right: 10px solid aqua;
+        width: 800px;
+        background-color: antiquewhite;
+        margin-left: 400px;
+    }
+
+</style>
+<body>
+<form>
+    <div id="khung">
+        <h1>DANG KY HOC VIEN</h1>
+        <label class="lable">Ho va ten:</label>
+        <input style="margin-left: 80px" type="text" name="name"><br><br>
+        <label class="lable">Ngay sinh</label>
+        <input style="margin-left: 80px" type="text" name="birth"><br><br>
+        <label class="lable">Gioi tinh:</label>
+        <input style="margin-left: 85px" type="radio" name="gended" value="Male" checked>Nam
+        <input type="radio" name="gended" value="female" checked>Nu<br><br>
+        <label class="lable">Dia chi:</label>
+        <textarea name="diachi" style="margin-left: 96px"></textarea><br><br>
+        <label class="lable">Lop:</label>
+        <select style="margin-left: 118px">
+            <option>Lop 1</option>
+            <option>Lop 2</option>
+            <option>Lop 3</option>
+        </select><br><br>
+        <label class="lable">Email:</label>
+        <input style="margin-left: 105px" type="text" name="birth"><br><br>
+        <label class="lable">Dien thoai:</label>
+        <input style="margin-left: 76px" type="number" name="birth"><br><br>
+        <input style="margin-left: 252px" type="submit" value="Dang ky">
+        <input type="submit" value="Nhap lai">
+    </div>
+</form>
+
 </body>
 </html>
