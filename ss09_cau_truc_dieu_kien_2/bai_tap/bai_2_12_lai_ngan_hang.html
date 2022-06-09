@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTienGuiBanDau =parseFloat(prompt("nhap so tien gui ban dau:"));
+    let soThangGui =parseFloat(prompt("nhap so thang muon gui"));
+    if (soThangGui<=6){
+        let heSoLai = 0.4/100;
+        let tienLai = soTienGuiBanDau * soThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    } else if (soThangGui<=12) {
+        let heSoLai = 0.5/100;
+        let tienLai = soTienGuiBanDau * soThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    } else {
+        let heSoLai = 0.6/100;
+        let tienLai = soTienGuiBanDau * soThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    }
+</script>
+</body>
+</html>

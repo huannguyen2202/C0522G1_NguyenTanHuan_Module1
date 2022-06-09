@@ -1,0 +1,22 @@
+<!--BAI 10 TINH TIEN DIEN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soDien =parseFloat(prompt("nhap vao so dien thang nay:"));
+    if (soDien<100){
+        let donGia1SoDien = parseFloat(2500);//don gia neu be hon 100 so dien
+        let thanhTien = soDien * donGia1SoDien;
+        alert("tien dien thang nay la: "+thanhTien);
+    } else {
+        let donGia1SoDien = parseFloat(3000);//don gia neu lon hon 100 so dien
+        let thanhTien = soDien * donGia1SoDien;
+        alert("tien dien thang này la: "+thanhTien);
+    }
+</script>
+</body>
+</html>

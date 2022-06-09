@@ -1,0 +1,22 @@
+<!--BAI 11 VIET CHUONG TRINH TINH THUE THU NHAP CA NHAN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong =parseInt(prompt("nhap vao tien luong cua ban:"));
+    if (tienLuong<=100) {
+        alert("thue thu nhap ca nhan la 0:");
+    } else if (tienLuong<=200){
+        let thue = tienLuong*10/100;
+        alert("thue thu nhap ca nhan la: "+thue);
+    } else {
+        let thue = tienLuong*15/100;
+        alert("thue thu nhap ca nhan la: "+thue)
+    }
+</script>
+</body>
+</html>

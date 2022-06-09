@@ -1,0 +1,215 @@
+<!--BAI 1 DOI DO C SANG DO F-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doC =prompt("nhap do c");
+    let doF = (parseFloat(doC)*9/5)+32
+    alert("do F=" +doF);
+</script>
+</body>
+</html>
+<!--BAI 2 CHUYEN TU M SANG FEET-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let met =prompt("nhap vao met");
+    let feet = parseFloat(met)*3.2808
+    alert("feet =" +feet);
+</script>
+</body>
+</html>
+<!--BAI 3 TINH DIEN TICH HINH VUONG-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let canhHinhVuong =prompt("nhap vao canh hinh vuong:");
+    let dienTichHinhVuong = parseFloat(canhHinhVuong)*parseFloat(canhHinhVuong);
+    alert("dien tich hinh vuong la: "+dienTichHinhVuong);
+</script>
+</body>
+</html>
+<!--BAI 4 TINH DIEN TICH HINH CHU NHAT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chieuDai =prompt("nhap vao chieu dai hcn:");
+    let chieuRong =prompt("nhap vao chieu rong hcn:");
+    let dienTichHinhChuNhat = parseFloat(chieuDai)*parseFloat(chieuRong);
+    alert("dien tich hcn la: "+dienTichHinhChuNhat);
+</script>
+</body>
+</html>
+<!--BAI 5 TINH DIEN TICH TAM GIAC VUONG KHI BIET HAI CANH KE A VA B-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let canhATamGiac =prompt("nhap vao canh tam giac vuong:");
+    let canhBTamGiac =prompt("nhap vao canh tam giac vuong:");
+    let dienTichTamGiac = 1/2*(parseFloat(canhATamGiac)*parseFloat(canhBTamGiac));
+    alert("dien tich tam giac vuong la: "+dienTichTamGiac);
+</script>
+</body>
+</html>
+<!--BAI 6 GIAI PHUONG TRÌNH BAC 1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("nhap vao gia tri a:"));
+    let b =parseInt(prompt("nhap vao gia tri b:"));
+    if (a === 0){
+        if (b === 0){
+            alert("phuong trinh vo so nghiem");
+        } else {
+            alert("phuong trinh vo nghiem");
+        }
+    } else {
+        alert("nghiem x =-b/a")
+    }
+
+</script>
+</body>
+</html>
+<!--BAI 7 GIAI PHUONG TRINH BAC 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("nhap vao gia tri a:"));
+    let b =parseInt(prompt("nhap vao gia tri b:"));
+    let c =parseInt(prompt("nhap vao gia tri c:"));
+    let dt =(b*b)-(4*a*c);
+    if (a === 0){
+        alert("phuong trinh bac 1")
+    } else {
+        if (dt<0){
+            alert("phuong trinh vo nghiem");
+        } else {
+            if (dt ===0){
+                alert("phuong trinh co nghiem kep x =-b/2*a");
+            } else {
+                alert("phuong trinh co 2 nghiem phan biet x1= (-b + sqrt(dt))/2*a va x2 =(-b-sqrt(dt))/2*a");
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
+<!--BAI 8 KIEM TRA SO NHAP VAO CO PHAI TUOI CUA 1 NGUOI HAY KHONG-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tuoi =parseInt(prompt("nhap so tuoi cua ban:"));
+    if (tuoi>0 && tuoi<120) {
+        alert(tuoi+" la tuoi cua 1 nguoi");
+    } else {
+        alert(tuoi+" khong la tuoi cua 1 nguoi");
+    }
+</script>
+</body>
+</html>
+<!--BAI 9 KIEM TRA XEM 3 SO NHAP VAO CO PHAI CANH CUA 1 TAM GIAC HAY KHONG-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soThuNhat =parseFloat(prompt("nhap vao gia tri canh a:"));
+    let soThuHai =parseFloat(prompt("nhap vao gia tri canh b:"));
+    let soThuBa =parseFloat(prompt("nhap vao gia tri canh c:"));
+    if ((soThuNhat>0 && soThuHai>0 && soThuBa>0) && ((soThuNhat + soThuHai)>soThuBa) && ((soThuHai+soThuBa)>soThuNhat) && ((soThuNhat+soThuBa)>soThuHai)) {
+        alert("day la mot tam giac");
+    } else {
+        alert("day khong phai la mot tam giac");
+    }
+</script>
+</body>
+</html>
+<!--BAI 10 TINH TIEN DIEN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soDien =parseFloat(prompt("nhap vao so dien thang nay:"));
+    if (soDien<100){
+        let donGia1SoDien = parseFloat(2500);//don gia neu be hon 100 so dien
+        let thanhTien = soDien * donGia1SoDien;
+        alert("tien dien thang nay la: "+thanhTien);
+    } else {
+        let donGia1SoDien = parseFloat(3000);//don gia neu lon hon 100 so dien
+        let thanhTien = soDien * donGia1SoDien;
+        alert("tien dien thang này la: "+thanhTien);
+    }
+</script>
+</body>
+</html>
+<!--BAI 11 VIET CHUONG TRINH TINH THUE THU NHAP CA NHAN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong =parseInt(prompt("nhap vao tien luong cua ban:"));
+    if (tienLuong<=100) {
+        alert("thue thu nhap ca nhan la 0:");
+    } else if (tienLuong<=200){
+        let thue = tienLuong*10/100;
+        alert("thue thu nhap ca nhan la: "+thue);
+    } else {
+        let thue = tienLuong*15/100;
+        alert("thue thu nhap ca nhan la: "+thue)
+    }
+</script>
+</body>
+</html>
+<!--BAI 12 TINH LAI NGAN HANG-->
+

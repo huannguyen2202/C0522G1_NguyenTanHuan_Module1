@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label>Nhập số phút gọi nội mạng: </label></td>
+        <td><input type="number" id="inputNoiMang"><br></td>
+    </tr>
+    <tr>
+        <td><label>Nhập số phút gọi ngoại mạng: </label></td>
+        <td><input type="number" id="inputNgoaiMang"><br></td>
+    </tr>
+    <tr>
+        <td><label>Nhập số phút gọi quốc tế: </label></td>
+        <td><input type="number" id="inputQuocTe"><br></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="tinhTien()" value="Tính số tiền"></td>
+    </tr>
+</table>
+<script>
+    function tinhTien() {
+        let phutNoiMang =parseFloat(document.getElementById("inputNoiMang").value);
+        let phutNgoaiMang =parseFloat(document.getElementById("inputNgoaiMang").value);
+        let phutQuocTe =parseFloat(document.getElementById("inputQuocTe").value);
+        var soTienNoiMang, soTienNgoaiMang, soTienQuocTe;
+        if (phutNoiMang<10){
+            let donGia1Phut = 2000;
+            soTienNoiMang = phutNoiMang * donGia1Phut;
+            alert("so tien noi mang la: " +soTienNoiMang);
+        } else {
+            let donGia1Phut = 1000;
+            soTienNoiMang = phutNoiMang * donGia1Phut;
+            alert("so tien noi mang la: "+soTienNoiMang);
+        }
+        if (phutNgoaiMang<10){
+            let donGia1Phut = 3000;
+            soTienNgoaiMang = phutNgoaiMang * donGia1Phut;
+            alert("so tien ngoai mang la: " +soTienNgoaiMang);
+        } else {
+            let donGia1Phut = 2000;
+            soTienNgoaiMang = phutNgoaiMang * donGia1Phut;
+            alert("so tien ngoai mang la: "+soTienNgoaiMang);
+        }
+        if (phutQuocTe<10){
+            let donGia1Phut = 4000;
+            soTienQuocTe = phutQuocTe * donGia1Phut;
+            alert("so tien quoc te la: " +soTienQuocTe);
+        } else {
+            let donGia1Phut = 3000;
+            soTienQuocTe = phutQuocTe * donGia1Phut;
+            alert("so tien noi mang la: "+soTienQuocTe);
+        }
+        let tongTienDienThoai = soTienNoiMang + soTienNgoaiMang + soTienQuocTe;
+        alert("Tong so tien dien thoai phai tra la: "+tongTienDienThoai);
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!--BAI 9 KIEM TRA XEM 3 SO NHAP VAO CO PHAI CANH CUA 1 TAM GIAC HAY KHONG-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soThuNhat =parseFloat(prompt("nhap vao gia tri canh a:"));
+    let soThuHai =parseFloat(prompt("nhap vao gia tri canh b:"));
+    let soThuBa =parseFloat(prompt("nhap vao gia tri canh c:"));
+    if ((soThuNhat>0 && soThuHai>0 && soThuBa>0) && ((soThuNhat + soThuHai)>soThuBa) && ((soThuHai+soThuBa)>soThuNhat) && ((soThuNhat+soThuBa)>soThuHai)) {
+        alert("day la mot tam giac");
+    } else {
+        alert("day khong phai la mot tam giac");
+    }
+</script>
+</body>
+</html>
