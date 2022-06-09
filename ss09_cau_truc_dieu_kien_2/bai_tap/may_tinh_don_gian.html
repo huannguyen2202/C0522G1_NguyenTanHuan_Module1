@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    table {
+        border: 3px solid black;
+        background-color: #7f9bff;
+    }
+</style>
 <body>
-<table>
+<table align="center">
     <tr>
-        <td colspan="4"><input type="number" name="number" id="1"></td>
+        <td colspan="4"><input type="text" name="number" id="view"></td>
     </tr>
     <tr>
         <td colspan="4"> </td>
     </tr>
     <tr>
-        <th><button>1</button></th>
-        <th><button>2</button></th>
-        <th><button>3</button></th>
-        <th><button>+</button></th>
+        <th><button type="button" value="1" onclick="inputValue(this.value)">1</button></th>
+        <th><button type="button" value="2" onclick="inputValue(this.value)">2</button></th>
+        <th><button type="button" value="3" onclick="inputValue(this.value)">3</button></th>
+        <th><button type="button" value="+" onclick="inputValue(this.value)">+</button></th>
+
     </tr>
     <tr>
-        <th><button>7</button></th>
-        <th><button>8</button></th>
-        <th><button>9</button></th>
-        <th><button>x</button></th>
+        <th><button type="button" value="7" onclick="inputValue(this.value)">7</button></th>
+        <th><button type="button" value="8" onclick="inputValue(this.value)">8</button></th>
+        <th><button type="button" value="9" onclick="inputValue(this.value)">9</button></th>
+        <th><button type="button" value="*" onclick="inputValue(this.value)">*</button></th>
     </tr>
     <tr>
-        <th><button>C</button></th>
-        <th><button>0</button></th>
-        <th><button>=</button></th>
-        <th><button>/</button></th>
+        <th><button type="button" onclick="reset()">C</button></th>
+        <th><button type="button" value="0" onclick="inputValue(this.value)">0</button></th>
+        <th><button onclick="result()">=</button></th>
+        <th><button type="button" value="/" onclick="inputValue(this.value)">/</button></th>
     </tr>
 </table>
+<script>
+    let view = document.getElementById("view");
+    function inputValue(value) {
+        view.value += value;
+    }
+    function result() {
+        let result = eval(view.value);
+        view.value = result;
+    }
+    function reset() {
+        view.value = "";
+    }
+</script>
 </body>
 </html>
