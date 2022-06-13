@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>tiền vay:</p>
+<input type="number" id="loan"><br>
+<p>số tháng:</p>
+<input type="number" id="month"><br>
+<p>Nhập  lãi suất hàng tháng:</p>
+<input type="number" id="interestRate">
+<label>%</label><br>
+<input type="button" onclick="tienLai()" value="tinh lai">
+<p id="result"></p>
+<script>
+    function tienLai() {
+        let loan=parseFloat(document.getElementById("loan").value);
+        let month =parseInt(document.getElementById("month").value);
+        let interestRate =parseFloat(document.getElementById("interestRate").value);
+        let result=0;
+        let loan2=loan;
+        if(loan>0 && month>0 && interestRate>0){
+            for( let i=1;i<=month;i++){
+                result=result+loan2*interestRate/100;
+                loan2=loan2+result;
+            }
+        }
+        document.getElementById("result").innerText=result;
+    }
+</script>
+</body>
+</html>

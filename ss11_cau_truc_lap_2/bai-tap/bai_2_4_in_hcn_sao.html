@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let rowNumber =parseInt(prompt("nhap vao so hang:"));
+let columnsNumber =parseInt(prompt("nhap vao so hang:"));
+for (i=1; i<=rowNumber; i++){
+    for (j=1; j<=columnsNumber; j++){
+        if (i===1|| j===1 || i===rowNumber|| j===columnsNumber){
+            document.write("*")
+        } else {
+            document.write("&nbsp;&nbsp;")
+        }
+    }document.write("<br>");
+}
+</script>
+</body>
+</html>
