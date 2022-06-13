@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let seed1 = 0;
+    let seed2 = 1;
+    let seed3;
+    let str = seed1 + ", " + seed2;
+    for(let i = 1; i<=20; i++){
+        seed3 = seed1 + seed2;
+        seed1 = seed2;
+        seed2 = seed3;
+        document.write(seed3 + ' ')
+        if(seed3 % 5 ===0){
+            alert(seed3);
+            break;
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
