@@ -6,15 +6,28 @@
 </head>
 <body>
 <script>
-    let rowNumber =parseInt(prompt("nhap vao so dong:"));
-    for (i = 1;i <= rowNumber;i++) {
+    let rownumber = parseInt(prompt("nhap vao so dong"));
+    //HINH 1
+    for (i = 1;i <=rownumber;i++) {
             for (j = 1; j <= i; j++) {
                 document.write("*");
             }
             document.write("<br>");
         }
-
-
+    //HINH 2
+    for (i = 1;i <=rownumber;i++) {
+        for (j =rownumber; j >= i; j--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    //HINH 3
+    for (i = 1;i <=rownumber;i++) {
+        for (j =1; j<=rownumber; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
 
 </script>
 </body>
