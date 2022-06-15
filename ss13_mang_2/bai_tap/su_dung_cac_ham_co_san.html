@@ -1,0 +1,72 @@
+//NOI PHAN TU MANG
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mycolor = ["Red", "Green", "White", "Black"];
+    console.log(mycolor.toString());
+    console.log(mycolor.join());
+    console.log(mycolor.join(" + "));
+</script>
+</body>
+</html>
+//BAI 2 CHEN DAU - VAO GIUA HAI SO CHAN
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = window.prompt();
+    var str = num.toString();
+    var result = [str[0]];
+    for (var x = 1; x < str.length; x++) {
+        if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+            result.push('-', str[x]);
+        } else {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>
+//BAI 3 CHUYEN CHU HOA THANH CHU THUONG
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = 'The Quick Brown Fox';
+    const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    const result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.includes(str[x]))
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.includes(str[x]))
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let eng =["apple", "banana", "orange"];
+    let vn=["qua tao", "qua chuoi", "qua cam"];
+    let str=prompt("nhap tu can dich:");
+    for(let i=0; i<eng.length; i++){
+        if(str===eng[i]) {
+            alert(vn[i]);
+            break;
+        }
+    }
+    if(i===eng.length){
+        alert("không tìm thấy");
+    }
+
+</script>
+</body>
+</html>

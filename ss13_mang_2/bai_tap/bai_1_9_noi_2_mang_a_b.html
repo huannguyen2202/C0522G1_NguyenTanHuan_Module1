@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumbera = [1,2,3];
+    let arrNumberb = [4,5,6,9];
+    //b1 khai báo mảng c có kích thước = a + b
+    let arrNumberc = new Array(arrNumbera.length + arrNumberb.length);
+    //b2 copy giá trị từ a sang c
+    for(let i = 0; i < arrNumbera.length; i++){
+        arrNumberc[i] = arrNumbera[i];
+    }
+    //b3 copy giá trị từ b sang c
+    for(let j = 0; j < arrNumberb.length; j++){
+        arrNumberc[arrNumbera.length + j] = arrNumberb[j];
+        //c[3] = b[0]
+        //c[4] = b[1]
+        //c[5] = b[2]
+        //c[6] = b[3]
+    }
+    document.write(arrNumberc);
+
+    // //cach 2
+    // let c = a.concat(b); //hàm nối mảng
+    // document.write(c);
+</script>
+</body>
+</html>
