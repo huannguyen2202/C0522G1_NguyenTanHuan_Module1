@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let radius = +prompt("nhap vao ban kinh de tinh chu vi:");
+    let radius1 = +prompt("nhap vao ban kinh de tinh dien tich:");
+    area(radius1);
+    perimeter(radius);
+
+    function area() {
+        let areaValue = 3.14 * radius1 * radius1;
+        alert(areaValue);
+        return areaValue;
+    }
+
+    function perimeter() {
+        let perimeterValue = 2 * radius * 3.14;
+        alert(perimeterValue);
+        return perimeterValue;
+    }
+
+
+</script>
+</body>
+</html>

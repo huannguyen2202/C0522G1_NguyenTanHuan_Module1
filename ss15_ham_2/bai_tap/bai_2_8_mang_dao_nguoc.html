@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayNumber = Array();
+    let number = parseInt(prompt("Nhap so phan tu:"));
+    for (let i = 0; i < number; i++) {
+        arrayNumber[i] = parseInt(prompt("Nhap vao phan tu thu " + i));
+    }
+    reverse(arrayNumber);
+
+    function reverse(array) {
+        for (let i = array.length - 1; i >= 0; i--) {
+            document.write(array[i] + " ")
+        }
+    }
+</script>
+</body>
+</html>

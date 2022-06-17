@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber = Array();
+    let number = parseInt(prompt("Nhap so phan tu:"));
+    for (let i = 0; i < number; i++) {
+        arrNumber[i] = parseInt(prompt("Nhap vao phan tu thu " + i));
+    }
+    let numberV = parseInt(prompt("Nhap vao mot so nguyen:"));
+    test(arrNumber, numberV);
+
+    function test(a, b) {
+        for (let i = 0; i < arrNumber.length; i++) {
+            if (arrNumber[i] === numberV) {
+                check = true;
+                break;
+            } else {
+                check = false;
+            }
+        }
+        if (check === true) {
+            alert(" is in the array");
+        } else {
+            alert(" is not in the array");
+        }
+    }
+</script>
+</body>
+</html>
