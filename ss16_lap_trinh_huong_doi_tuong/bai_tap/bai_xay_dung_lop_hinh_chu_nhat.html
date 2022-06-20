@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangular {
+        constructor(long, width) {
+            this.long = long;
+            this.width = width;
+        }
+        getLong(){
+            return this.long;
+        }
+        getWidth(){
+            return this.width;
+        }
+        getArea(){
+            return this.long*this.width;
+        }
+        getPerimeter(){
+            return (this.long + this.width)*2
+        }
+    }
+    let rectangular = new Rectangular(5,3);
+    let long = rectangular.getLong();
+    let width = rectangular.getWidth();
+    let area = rectangular.getArea();
+    let perameter = rectangular.getPerimeter();
+    document.write("chieu dai: "+long+"<br>"+"chieu rong: "+width+"<br>"+"dien tich: " +area+"<br>"+"chu vi: "+perameter);
+</script>
+</body>
+</html>
